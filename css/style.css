@@ -6,3 +6,51 @@ body
 
 }
 
+#container 
+{
+	background-color: white;
+	width: 300px;
+	padding: 50px;
+	margin-left: auto;
+	margin-right: auto;		
+	margin-top: 100px;
+	/* prewencyjnie sie pisze dla innych przegladarek, niby idzie tylko z ostatnia linijka */
+	-webkit-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+	-moz-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+	box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+}
+
+input[type=text], 
+input[type=password]
+{
+	width: 300px;
+	background-color: #efefef;
+	color: #666;
+	border: 2px solsid #ddd;
+	border-radius: 5px;
+	/* input nie dziedziczy font-size od body */
+	font-size: 20px;
+	padding: 10px;
+	/* nakazuje ustawic 300px niezaleznie od contentu, 
+	bez tego byloby w text field 300 plus 20 border a w button 300 - 20 border  */
+	box-sizing: border-box;
+}
+input[type=submit]
+{
+	width: 300px;
+	background-color: #36b03c;
+	font-size: 20px;
+	color: white;
+	/* 		os 	x	y */
+	padding: 15px 10px;
+	margin-top: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+}
+
+input[type=submit]:hover
+{
+	background-color: #37b93d;
+}
