@@ -36,6 +36,9 @@ input[type=password]
 	box-sizing: border-box;
 	/* wylaczanie domysnych obwodek niebieskich kwadratowych */
 	outline: none;
+	/* po usunieciu br w html */
+	margin-top: 10px;
+
 
 }
 /* zachodzi nie tylko po klinknieciu ale takze po tabulatorze */
